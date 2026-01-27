@@ -24,16 +24,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#journey">Journey</a>
+                        <a class="nav-link" href="#index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#stages">Stages</a>
+                        <a class="nav-link" href="paginas/stages.html">Stages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="paginas/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#mars">Mars WIP</a>
+                        <a class="nav-link" href="paginas/mars.html">Mars WIP</a>
                     </li>
                 </ul>
             </div>
@@ -112,6 +112,24 @@
 
     </section>
 
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // esto para bajar
+                navbar.classList.add('navbar-hidden');
+            } else {
+                // esto para subir
+                navbar.classList.remove('navbar-hidden');
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
 </body>
 
 </html>
