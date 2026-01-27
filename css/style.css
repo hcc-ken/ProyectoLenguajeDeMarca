@@ -12,3 +12,11 @@
     height: 250px;
     object-fit: cover;
 }
+
+.link-hover {
+  transition: color 0.2s ease;
+}
+
+.link-hover:hover {
+  color: #0d6efd;
+}
