@@ -1,17 +1,13 @@
-
-/* Video de fondo */
 .hero-video {
     object-fit: cover;
     z-index: -2;
 }
 
-/* Overlay oscuro del hero */
 .hero-overlay {
     opacity: 0.65;
     z-index: -1;
 }
 
-/* Altura fija para imágenes de las tarjetas */
 .stage-img {
     height: 250px;
     object-fit: cover;
