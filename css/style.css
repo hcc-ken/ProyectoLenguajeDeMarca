@@ -12,3 +12,11 @@
     height: 250px;
     object-fit: cover;
 }
+
+.navbar {
+    transition: top 0.4s ease;
+}
+
+nav.navbar-hidden {
+    top: -200px;
+}
