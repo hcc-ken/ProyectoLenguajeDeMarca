@@ -14,6 +14,150 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo/Brand -->
+            <a class="navbar-brand fw-bold" href="#home">SPACE HAWKINGS</a>
+
+            <!-- Botón hamburguesa para móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stages">Stages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mars">Mars WIP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-vh-100 d-flex align-items-center justify-content-center text-white position-relative overflow-hidden">
+
+        <!-- Video de fondo -->
+        <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100"
+            style="object-fit: cover; z-index: -2;">
+            <source src="/img/111528-690743564_medium.mp4" type="video/mp4">
+        </video>
+
+        <!-- Overlay oscuro MÁS FUERTE -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.65; z-index: -1;"></div>
+
+        <!-- Contenido del Hero -->
+        <div class="container text-center position-relative z-1 px-4">
+            <!-- Subtítulo pequeño arriba -->
+            <p class="text-uppercase mb-2"
+                style="font-size: 0.75rem; letter-spacing: 3px; font-weight: 300; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
+                SPACE JOURNEY</p>
+
+            <!-- Título principal GRANDE -->
+            <h1 class="fw-bold mb-4"
+                style="font-size: clamp(2rem, 8vw, 5rem); letter-spacing: 0.5rem; line-height: 1.1; text-shadow: 3px 3px 12px rgba(0,0,0,0.9);">
+                JOURNEY BEYOND EARTH</h1>
+
+            <!-- Subtítulo GRANDE -->
+            <h2 class="fw-light mb-3"
+                style="font-size: clamp(1.5rem, 5vw, 3.5rem); letter-spacing: 0.2rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">
+                Earth to Moon</h2>
+
+            <!-- Space Travel pequeño -->
+            <p class="text-uppercase mb-4"
+                style="font-size: 0.85rem; letter-spacing: 2px; font-weight: 300; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
+                SPACE TRAVEL</p>
+
+            <!-- Descripción -->
+            <p class="mx-auto mb-5"
+                style="max-width: 650px; font-size: 1rem; line-height: 1.6; text-shadow: 2px 2px 8px rgba(0,0,0,0.9);">
+                Explore the extraordinary journey from Earth's exosphere to the lunar surface.
+                Discover the science, the technology, and the wonder of space travel.
+            </p>
+
+            <!-- Botón -->
+            <a href="#stages" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase fw-semibold"
+                style="letter-spacing: 4px; font-size: 0.9rem; border-width: 2px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">EXPLORE</a>
+        </div>
+    </section>
+    <!-- Sección Stages -->
+    <section id="stages" class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <!-- Título de la sección -->
+            <div class="text-center mb-5">
+                <p class="text-uppercase mb-2"
+                    style="font-size: 0.75rem; letter-spacing: 3px; font-weight: 300; opacity: 0.7;">FROM EXOSPHERE TO
+                    MOON</p>
+                <h2 class="fw-light mb-3" style="font-size: 2rem; letter-spacing: 0.2rem;">Modern journeys beyond
+                    Earth—educational, bold, and inspiring.</h2>
+            </div>
+
+            <!-- 3 tarjetas de las etapas -->
+            <div class="row g-4">
+                <!-- Tarjeta 1: Exosphere lift -->
+                <div class="col-md-4">
+                    <div class="card bg-black text-white border-0 h-100">
+                        <img src="img/exosfera.png" class="card-img-top" alt="Exosphere lift"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-3" style="font-size: 1.3rem;">Exosphere lift.</h5>
+                            <p class="card-text" style="line-height: 1.7; opacity: 0.85;">
+                                The journey begins by leaving Earth through the exosphere - the gateway to space. All
+                                stages are clearly explained.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Orbital cruise -->
+                <div class="col-md-4">
+                    <div class="card bg-black text-white border-0 h-100">
+                        <img src="img/orbital_cruise.png" class="card-img-top" alt="Orbital cruise"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-3" style="font-size: 1.3rem;">Orbital cruise.</h5>
+                            <p class="card-text" style="line-height: 1.7; opacity: 0.85;">
+                                Stabilizing in low-Earth orbit, circling the planet at thrilling speeds. Experience is
+                                always in full view.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Lunar arrival -->
+                <div class="col-md-4">
+                    <div class="card bg-black text-white border-0 h-100">
+                        <img src="img/lunar_arrival.png" class="card-img-top" alt="Lunar arrival"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-semibold mb-3" style="font-size: 1.3rem;">Lunar arrival.</h5>
+                            <p class="card-text" style="line-height: 1.7; opacity: 0.85;">
+                                Travelling through space to the Moon - landing and exploring its mysteries. All details
+                                fit any screen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 
 </body>
 
