@@ -20,3 +20,28 @@
 nav.navbar-hidden {
     top: -200px;
 }
+
+.hover-card {
+    transition: transform .30s ease, box-shadow .30s ease;
+    cursor: pointer;
+    will-change: transform, box-shadow;
+}
+
+.hover-card:focus, .hover-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .35);
+    outline: none;
+}
+
+.hover-card .card-img-top {
+    transition: transform .9s ease, opacity .35s ease;
+}
+
+.hover-card:focus .card-img-top, .hover-card:hover .card-img-top {
+    transform: scale(1.06);
+}
+
+.hover-card:hover .hover-reveal, .hover-card:focus .hover-reveal {
+    max-height: 300px;
+    opacity: .85;
+}
