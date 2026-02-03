@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -11,7 +11,7 @@
     <title>Space Hawkings - Journey Beyond Earth</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">
@@ -36,12 +36,143 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href= "mars.html">Mars (WIP)</a>
+                        <a class="nav-link" href="mars.html">Mars (WIP)</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Mars Hero Section - Following Stages.html pattern -->
+    <section class="mars-section d-flex align-items-center justify-content-center" style="background-image: url('../img/marte.png'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 100vh; position: relative;">
+        
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.75; z-index: 0;"></div>
+
+        <div class="container position-relative z-1">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto">
+                    <div class="content-text">
+                        <h1 class="display-3 fw-bold mb-4" style="text-shadow: 0 0 30px rgba(255,255,255,0.3);">Mars: The Red Planet</h1>
+                        <p class="lead mb-4" style="font-size: 1.3rem; line-height: 1.8;">
+                            Mars is humanity's next great frontier—a world of mystery, potential, and boundless discovery.
+                        </p>
+
+                        <p style="font-size: 1.1rem; line-height: 1.8; max-width: 900px; margin: 0 auto 3rem;">
+                            Once a world with flowing water and a thick atmosphere, Mars now holds the secrets of planetary evolution. Its polar ice caps, vast canyons, and evidence of ancient life make it the most compelling destination for human exploration.
+                        </p>
+
+                        <p style="font-size: 1.1rem; line-height: 1.8; max-width: 900px; margin: 0 auto 3rem;">
+                            At Space Hawkings, we are committed to making Mars accessible. Our research and development initiatives focus on creating the technology and systems needed for sustainable human presence on the Red Planet.
+                        </p>
+
+                        <p style="font-size: 1.15rem; line-height: 1.8; font-weight: 500; max-width: 900px; margin: 0 auto 3rem;">
+                            Mars awaits explorers. Are you ready?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mars Information Section -->
+    <section class="content-pair bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="content-text text-lg-start">
+                        <h2 class="fw-bold">Planet Facts & Characteristics</h2>
+                        <p style="line-height:1.7;">Mars is the fourth planet from the Sun, known for its distinctive red color caused by iron oxide on its surface. With a diameter of 6,779 km and a day length of 24.6 hours, Mars shares surprising similarities with Earth.</p>
+                        
+                        <ul class="list-unstyled" style="line-height: 1.9;">
+                            <li><strong>Distance from Earth:</strong> 54.6 to 401 million km</li>
+                            <li><strong>Surface Temperature:</strong> Average -65°C</li>
+                            <li><strong>Atmosphere:</strong> 95% carbon dioxide, thin but measurable</li>
+                            <li><strong>Water:</strong> Ice at poles and subsurface aquifers</li>
+                            <li><strong>Moons:</strong> Phobos and Deimos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="content-image text-lg-start mt-4 mt-lg-0">
+                        <img src="../img/marte llegada.png" alt="Mars Characteristics" class="img-fluid rounded shadow-sm content-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Exploration Missions -->
+    <section class="content-pair bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="content-text">
+                        <h2 class="fw-bold">Active Exploration Missions</h2>
+                        <p style="line-height:1.7;">Multiple space agencies and organizations are currently studying Mars through rovers, orbiters, and landers. These missions are gathering critical data for future human exploration.</p>
+                        
+                        <div style="margin-top: 1.5rem;">
+                            <h5 class="fw-semibold mb-2">Key Active Missions:</h5>
+                            <ul class="list-unstyled" style="line-height: 1.9;">
+                                <li>🤖 <strong>Perseverance Rover:</strong> Searching for ancient microbial life in Jezero Crater</li>
+                                <li>🚁 <strong>Ingenuity Helicopter:</strong> Testing aerial exploration technology</li>
+                                <li>🛰️ <strong>Zhurong Rover (China):</strong> Exploring Utopia Planitia</li>
+                                <li>👨‍🚀 <strong>Future Crewed Missions:</strong> NASA, SpaceX planning 2030s-2040s launches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content-image text-lg-end mt-4 mt-lg-0">
+                        <img src="../img/orbita marte.png" alt="Mars Exploration" class="img-fluid rounded shadow-sm content-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space Hawkings Mars Initiative -->
+    <section class="content-pair bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="content-text text-lg-start">
+                        <h2 class="fw-bold">Space Hawkings Mars Initiative <span class="badge bg-warning text-dark">WIP</span></h2>
+                        <p style="line-height:1.7;">We are developing cutting-edge technology to make Mars exploration safer, faster, and more sustainable. Our research focuses on three critical areas:</p>
+                        
+                        <div style="margin-top: 1.5rem;">
+                            <h5 class="fw-semibold mb-3">Current Development Areas:</h5>
+                            <div class="mb-3">
+                                <strong class="text-info">Advanced Propulsion Systems</strong>
+                                <p class="small opacity-75 mb-0">Next-generation engines and fuel technologies to reduce travel time and increase payload capacity.</p>
+                            </div>
+                            <div class="mb-3">
+                                <strong class="text-info">Life Support Technology</strong>
+                                <p class="small opacity-75 mb-0">Closed-loop systems for oxygen generation, water recycling, and food production on Mars.</p>
+                            </div>
+                            <div>
+                                <strong class="text-info">Habitat Construction</strong>
+                                <p class="small opacity-75 mb-0">Durable, expandable habitats designed for Martian conditions and long-term human residence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="content-image text-lg-start mt-4 mt-lg-0">
+                        <img src="../img/marte y tierra.png" alt="Mars Initiative" class="img-fluid rounded shadow-sm content-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-black text-white text-center border-top border-secondary">
+        <div class="container py-5">
+            <h3 class="display-4 fw-bold mb-4">Join the Mars Exploration Era</h3>
+            <p class="lead mb-5 opacity-90">This page is under development. Check back soon for updates on Space Hawkings' Mars exploration initiatives, partnerships, and timeline.</p>
+            <a href="../index.html" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase fw-semibold">Back to Home</a>
+        </div>
+    </section>
 
     <footer class="bg-dark text-light pt-5 pb-3">
     <div class="container">
