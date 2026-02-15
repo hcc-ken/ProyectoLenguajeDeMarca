@@ -26,31 +26,36 @@ nav.navbar-hidden {
 }
 
 .hover-card {
-    transition: transform .30s ease, box-shadow .30s ease;
+    transition: transform .30s cubic-bezier(.2,.8,.2,1), box-shadow .30s ease;
     cursor: pointer;
     will-change: transform, box-shadow;
+    transform-origin: center center;
 }
 
 .hover-card:focus,
 .hover-card:hover {
-    transform: translateY(-6px);
+    /* la tarjeta entera se eleva y escala para mantener imagen + texto sincronizados */
+    transform: translateY(-6px) scale(1.03);
     box-shadow: 0 12px 28px rgba(0, 0, 0, .35);
     outline: none;
 }
 
 .hover-card .card-img-top {
-    transition: transform .9s ease, opacity .35s ease;
+    /* la imagen ya no se escala independientemente; sigue la transformación del padre */
+    transition: opacity .30s ease;
+    transform: none;
 }
 
 .hover-card:focus .card-img-top,
 .hover-card:hover .card-img-top {
-    transform: scale(1.06);
+    opacity: 0.95;
 }
 
 .hover-card:hover .hover-reveal,
 .hover-card:focus .hover-reveal {
     max-height: 300px;
     opacity: .85;
+    transition: max-height .30s ease, opacity .30s ease;
 }
 
 /* Paired content sections styling */
