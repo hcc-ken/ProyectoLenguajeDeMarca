@@ -18,7 +18,7 @@
 }
 
 .navbar {
-    transition: top 0.4s ease;
+    transition: top 0s ease;
 }
 
 nav.navbar-hidden {
@@ -78,4 +78,72 @@ nav.navbar-hidden {
     .content-pair .content-img {
         height: 220px;
     }
+}
+
+.space {
+    color: #1ed3f8;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17%;
+
+    animation: typing 2s steps(12),
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.display-5 {
+    color: #ffffff;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 67%;
+
+    animation: typing 4s steps(25),
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.display-3{
+    color: #ffffff;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 200%;
+
+    animation: typing 4s steps(25),
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.fadeBlur{
+    animation: fadeBlur 1.2s ease-out both;
+}
+
+@keyframes fadeBlur {
+  from {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
 }
