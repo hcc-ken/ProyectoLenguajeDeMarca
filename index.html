@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#home">
+            <a class="navbar-brand fw-bold" href="#index.html">
                 <i class="bi bi-rocket-takeoff me-2"></i>SPACE HAWKINGS
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#index.html">Home</a>
+                        <a class="nav-link active" href="#index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="paginas/stages.html">Stages</a>
@@ -46,25 +46,39 @@
     </nav>
 
     <section id="home"
-        class="hero-section mt-5 min-vh-100 d-flex align-items-center justify-content-center text-white position-relative overflow-hidden">
-        <video autoplay muted loop playsinline class="hero-video position-absolute top-0 start-0 w-100 h-100">
-            <source src="img/111528-690743564_medium.mp4" type="video/mp4">
-        </video>
+    class="hero-section mt-5 min-vh-100 d-flex align-items-center justify-content-center text-white position-relative overflow-hidden">
+    <video autoplay muted loop playsinline class="hero-video position-absolute top-0 start-0 w-100 h-100">
+        <source src="img/111528-690743564_medium.mp4" type="video/mp4">
+    </video>
 
-        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark"></div>
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark"></div>
 
-        <div class="container text-center position-relative z-1 px-4">
-            <p class="text-uppercase mb-2 opacity-75 small">SPACE JOURNEY</p>
-            <h1 class="display-1 fw-bold mb-4">JOURNEY BEYOND EARTH</h1>
-            <h2 class="display-2 fw-light mb-3">Earth to Moon</h2>
-            <p class="text-uppercase mb-4 opacity-75">SPACE TRAVEL</p>
-            <p class="lead mx-auto mb-5">
-                Explore the extraordinary journey from Earth's exosphere to the lunar surface.
-                Discover the science, the technology, and the wonder of space travel.
-            </p>
-            <a href="#stages" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase fw-semibold">EXPLORE</a>
+    <div class="container text-center position-relative z-1 px-4">
+        <div class="d-flex justify-content-center mb-2">
+            <p class="text-uppercase opacity-75 small typing-effect-once">SPACE JOURNEY</p>
         </div>
-    </section>
+        
+        <div class="d-flex justify-content-center mb-4">
+            <h1 class="display-1 fw-bold typing-effect-once">JOURNEY BEYOND EARTH</h1>
+        </div>
+        
+        <div class="d-flex justify-content-center mb-3">
+            <h2 class="display-2 fw-light typing-effect-once">Earth to Moon</h2>
+        </div>
+        
+        <div class="d-flex justify-content-center mb-4">
+            <p class="text-uppercase opacity-75 typing-effect-once">SPACE TRAVEL</p>
+        </div>
+        
+        <p class="lead mx-auto mb-5" style="max-width: 800px;">
+            Explore the extraordinary journey from Earth's exosphere to the lunar surface.
+            Discover the science, the technology, and the wonder of space travel.
+        </p>
+        
+        <a href="#stages" class="btn btn-outline-light btn-lg px-5 py-3 text-uppercase fw-semibold">EXPLORE</a>
+    </div>
+</section>
+
 
     <section id="stages" class="py-5 bg-dark text-white">
         <div class="container py-5">
@@ -196,65 +210,56 @@
     <footer class="bg-dark text-light pt-5 pb-3">
         <div class="container">
 
-            <!-- Brand destacado & hero text -->
-            <div class="row align-items-start mb-4">
+            <div class="row mb-4 g-4">
                 <div class="col-lg-7">
-                    <p class="space">SPACE JOURNEY</p>
-                    <h1 class="display-5 fw-bold mb-0 text-white shadow-sm"
-                        style="text-shadow: 0 0 20px rgba(255,255,255,0.3); line-height: 1.1;">
-                        Space Hawkings<br>
-                        <span class="text-light fs-2 fw-normal mt-1"
-                            style="text-shadow: 0 0 15px rgba(13,110,253,0.5);">
-                            Journey Beyond Earth
-                        </span>
-                    </h1>
+                    <p class="text-info text-uppercase small mb-3 fw-bold typing-effect typing-fast">SPACE JOURNEY</p>
+                    <h2 class="h1 fw-bold text-white mb-3 typing-effect">Space Hawkings</h2>
+                    <p class="fs-5 text-light fw-normal mb-0 typing-effect">Journey Beyond Earth</p>
                 </div>
 
-                <div class="col-lg-5 mt-3 mt-lg-5 text-lg-end">
-                    <p class="mb-0 fst-italic text-light opacity-90">
+                <div class="col-lg-5 d-flex align-items-end text-lg-end">
+                    <p class="mb-0 fst-italic text-light opacity-75 fs-6">
                         Explore the extraordinary journey from Earth's exosphere to the lunar surface.
                         Discover the science, the technology, and the wonder of space travel.
                     </p>
                 </div>
             </div>
 
-            <hr class="border-secondary">
+            <hr class="border-secondary my-4">
 
-            <!-- Social + legal -->
-            <div class="row align-items-center">
+
+            <div class="row align-items-center g-3">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <span class="me-3 text-light-emphasis">Follow us:</span>
+                    <span class="me-3 text-light">Follow us:</span>
 
-                    <a href="#" class="me-2"
-                        style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;"
-                        onmouseover="this.style.background='#1da1f2'; this.style.borderColor='#1da1f2'; this.style.transform='scale(1.1)'"
-                        onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.2)'; this.style.transform='scale(1)'">
-                        <i class="bi bi-twitter-x fs-5 text-white"></i>
-                    </a>
-
-                    <a href="#" class="me-2"
-                        style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;"
-                        onmouseover="this.style.background='#e4405f'; this.style.borderColor='#e4405f'; this.style.transform='scale(1.1)'"
-                        onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.2)'; this.style.transform='scale(1)'">
-                        <i class="bi bi-instagram fs-5 text-white"></i>
+                    <a href="#"
+                        class="btn btn-outline-light btn-sm rounded-circle me-2 d-inline-flex align-items-center justify-content-center social-btn">
+                        <i class="bi bi-twitter-x"></i>
                     </a>
 
                     <a href="#"
-                        style="width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s ease;"
-                        onmouseover="this.style.background='#ff0000'; this.style.borderColor='#ff0000'; this.style.transform='scale(1.1)'"
-                        onmouseout="this.style.background='transparent'; this.style.borderColor='rgba(255,255,255,0.2)'; this.style.transform='scale(1)'">
-                        <i class="bi bi-youtube fs-5 text-white"></i>
+                        class="btn btn-outline-light btn-sm rounded-circle me-2 d-inline-flex align-items-center justify-content-center social-btn">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#"
+                        class="btn btn-outline-light btn-sm rounded-circle d-inline-flex align-items-center justify-content-center social-btn">
+                        <i class="bi bi-youtube"></i>
                     </a>
                 </div>
 
                 <div class="col-md-6 text-md-end">
-                    <div class="small">
-                        <span>© 2026 Space Hawkings · Scientific data kept up to date</span>
-                    </div>
+                    <small class="text-light opacity-75">
+                        © 2026 Space Hawkings · Scientific data kept up to date
+                    </small>
                 </div>
             </div>
         </div>
     </footer>
+
+
+
+
 </body>
 
 </html>
