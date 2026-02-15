@@ -99,7 +99,20 @@ nav.navbar-hidden {
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 67%;
+    width: 55%;
+
+    animation: typing 4s steps(25),
+        blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.display-6 {
+    color: #ffffff;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 55%;
 
     animation: typing 4s steps(25),
         blink .5s infinite step-end alternate;
