@@ -1,3 +1,4 @@
+/* alinear propiedades no significa reducir css. el objetivo es reducior empleando proppiedades y clases de bootstrap */
 .redMars {
     color: #e16a15;
 }
@@ -244,17 +245,32 @@ nav.navbar-hidden {
 }
 
 @keyframes typing {
-    from { max-width: 0; }
-    to { max-width: 100%; }
+    from {
+        max-width: 0;
+    }
+
+    to {
+        max-width: 100%;
+    }
 }
 
 @keyframes blink {
-    0%, 50% { border-color: currentColor; }
-    51%, 100% { border-color: transparent; }
+
+    0%,
+    50% {
+        border-color: currentColor;
+    }
+
+    51%,
+    100% {
+        border-color: transparent;
+    }
 }
 
 @keyframes hideCursor {
-    to { border-right-color: transparent; }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 @media (max-width: 768px) {
@@ -268,15 +284,16 @@ nav.navbar-hidden {
 }
 
 @media (max-width: 768px) {
+
     .display-4,
     .display-5 {
         font-size: 2rem !important;
     }
-    
+
     .lead {
         font-size: 1.1rem !important;
     }
-    
+
     .fs-5 {
         font-size: 1rem !important;
     }
